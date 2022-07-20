@@ -5,7 +5,7 @@ import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) {
-        ArrayList<Integer> list = new ArrayList<>(Arrays.asList(1, 2, 3, 4, 5));
+        var list = new ArrayList<Integer>(Arrays.asList(1, 2, 3, 4, 5));
         // list.add(1);
         // list.add(2);
         // list.add(3);

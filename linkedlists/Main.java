@@ -6,7 +6,7 @@ import java.util.LinkedList;
 
 public class Main {
     public static void main(String[] args) {
-        LinkedList<Integer> list = new LinkedList<>(Arrays.asList(1, 2, 3, 4, 5, 6));
+        var list = new LinkedList<Integer>(Arrays.asList(1, 2, 3, 4, 5, 6));
         // list.add(2);
         // list.add(3);
         // list.add(4);
@@ -24,7 +24,7 @@ public class Main {
         var arr = list.toArray();
         System.out.println(Arrays.toString(arr));
 
-        System.out.println(getKthFromTheEnd(list, 3));
+        System.out.println(getKthFromTheEnd(list, 2));
 
         // Collections.reverse(list);
         // System.out.println(list);
@@ -44,6 +44,6 @@ public class Main {
         // k -> [5, 4, 3, 2, 1, 0]
         // list [5, 12, 6, 8, 2, 4]
         // n -> [0, 1, 2, 3, 4, 5]
-        return list.size() - k - 1;
+        return list.get(list.size() - k - 1);
     }
 }
