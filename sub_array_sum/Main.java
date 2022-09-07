@@ -1,4 +1,4 @@
-package subarraysum;
+package sub_array_sum;
 
 import java.util.ArrayList;
 import java.util.Arrays;

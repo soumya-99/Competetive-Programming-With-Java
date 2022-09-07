@@ -1,4 +1,4 @@
-package findlastnumarray;
+package find_last_num_array;
 
 import java.util.Scanner;
 

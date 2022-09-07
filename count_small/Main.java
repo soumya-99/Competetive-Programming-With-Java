@@ -1,4 +1,4 @@
-package countsmall;
+package count_small;
 
 // import java.util.ArrayList;
 import java.util.Arrays;

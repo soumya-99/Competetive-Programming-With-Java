@@ -1,4 +1,4 @@
-package balancingstring;
+package balancing_string;
 
 import java.util.Arrays;
 import java.util.List;

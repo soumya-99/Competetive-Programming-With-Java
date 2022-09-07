@@ -1,4 +1,4 @@
-package kadanesalgo;
+package kadanes_algo;
 
 public class Main {
     // arr[] = {1, 2, 3, -2, 5}

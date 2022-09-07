@@ -1,4 +1,4 @@
-package formpalindrome;
+package form_palindrome;
 
 // import java.util.Arrays;
 
