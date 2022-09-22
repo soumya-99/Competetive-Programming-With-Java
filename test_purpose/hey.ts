@@ -8,3 +8,5 @@ Return the maximum profit you can achieve from this transaction. If you cannot a
 prices = [7, 1, 5, 3, 6, 4]
 output 5
 */
+
+console.log("afsd")
