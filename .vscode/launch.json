@@ -5,6 +5,13 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "type": "java",
+            "name": "Launch Main",
+            "request": "launch",
+            "mainClass": "count_small.Main",
+            "projectName": "Java_a7c07b7c"
+        },
+        {
             "type": "node",
             "request": "launch",
             "name": "Launch Program",

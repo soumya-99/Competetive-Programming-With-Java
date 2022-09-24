@@ -11,5 +11,3 @@ function containsNearbyDuplicate(nums: number[], k: number): boolean {
 
 console.log(containsNearbyDuplicate([1, 2, 3, 1], 3))
 console.log(containsNearbyDuplicate([1, 2, 3, 1, 2, 3], 2))
-
-console.log(new Map())
