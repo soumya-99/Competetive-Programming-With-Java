@@ -1,20 +1,32 @@
 function letterCombinations(digits: string): string[] {
-    const LETTERS = {
-        "2": ['a', 'b', 'c'],
-        "3": ['d', 'e', 'f'],
-        "4": ['g', 'h', 'i'],
-        "5": ['j', 'k', 'l'],
-        "6": ['m', 'n', 'o'],
-        "7": ['p', 'q', 'r', 's'],
-        "8": ['t', 'u', 'v'],
-        "9": ['w', 'x', 'y', 'z'],
+    const map: string[] = [
+        '0',
+        '1',
+        'abc',
+        'def',
+        'ghi',
+        'jkl',
+        'mno',
+        'pqrs',
+        'tuv',
+        'wxyz'
+    ]
+    let res: string[] = []
+    if (digits.length === 0) {
+        return res
     }
-
-    const result: string[] = []
-
-    console.log(LETTERS[2][0])
-    
-    return result
+    res.push('')
+    for (let i = 0; i < digits.length; i++) {
+        let tmp: string[] = []
+        let letters: string = map[parseInt(digits[i])]
+        for (let j = 0; j < letters.length; j++) {
+            for (let k = 0; k < res.length; k++) {
+                tmp.push(res[k] + letters[j])
+            }
+        }
+        res = tmp
+    }
+    return res
 }
 
 console.log(letterCombinations("23"))
