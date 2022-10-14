@@ -7,12 +7,27 @@ class ListNode {
     }
 }
 
-function removeNthFromEnd(head: ListNode | null, n: number): ListNode | null {
-    let node: ListNode = new ListNode(2)
-    node.next = null
-    console.log(node)
-  
-    return node
-}
+// function removeNthFromEnd(head: ListNode | null, n: number): ListNode | null {
+//     let curr = head
+//     let length = 0
+//     while (curr) {
+//         length++
+//         curr = curr.next
+//     }
+//     let index = length - n
+//     if (index === 0) {
+//         return head?.next
+//     }
+//     curr = head
+//     while (curr) {
+//         if (index === 1) {
+//             curr.next = curr.next?.next
+//             break
+//         }
+//         index--
+//         curr = curr.next
+//     }
+//     return head
+// }
 
-console.log(removeNthFromEnd([1,2,3,4,5], 2))
+// console.log(removeNthFromEnd(new ListNode(1, new ListNode(2, new ListNode(3, new ListNode(4)))), 2))

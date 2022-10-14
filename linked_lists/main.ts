@@ -7,31 +7,43 @@ class ListNode {
     }
 }
 
-let list = new ListNode(1, new ListNode(2, new ListNode(3, new ListNode(4, null))))
+// let list = new ListNode(1, new ListNode(2, new ListNode(3, new ListNode(4))))
+let list = new ListNode()
 
-function addNode(node: ListNode, val: number) {
-    let newNode = new ListNode(val, null)
-    let current = node
-    while (current.next !== null) {
-        current = current.next
+function addNode(head: ListNode | null, val: number): ListNode | null {
+    let curr = head
+    if (curr === null) {
+        return new ListNode(val)
     }
-    current.next = newNode
+    while (curr.next) {
+        curr = curr.next
+    }
+    curr.next = new ListNode(val)
+    return head
 }
 
-function addFirst(node: ListNode, val: number) {
-    let newNode = new ListNode(val, node)
-    return newNode
+function reverseList(head: ListNode | null): ListNode | null {
+    let prev = new ListNode()
+    let curr = head
+    while (curr) {
+        let next = curr.next
+        curr.next = prev
+        prev = curr
+        curr = next
+    }
+    return prev
 }
 
-function printList(node: ListNode | null) {
-    let current = node
-    while (current !== null) {
-        console.log(current.val)
-        current = current.next
+function printList(head: ListNode | null): void {
+    let curr = head
+    while (curr) {
+        console.log(curr.val)
+        curr = curr.next
     }
 }
 
-addFirst(list, 55)
-addNode(list, 6)
-printList(list)
-// console.log(node)
+addNode(list, 58)
+addNode(list, 76)
+addNode(list, 16)
+
+console.log(list)
