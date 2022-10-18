@@ -24,3 +24,28 @@
 
 
 
+
+
+
+// const arr = [1, 2, 3, 4, 5]
+// arr.some(a => a)
+// const lola: Map() = {
+//     "hey": 1,
+//     "modon": 5,
+//     "system": 78,
+// }
+
+// const lola = new Map<string, number>()
+// lola.set("gud", 3)
+// lola.set("bad", 35)
+// lola.set("dudu", 65)
+
+// console.table(lola)
+
+
+
+
+const ages = [10, 12, 18, 9, 23]
+// const ages = [10, 2, 1, 9, 3]
+// console.log(ages.some(age => age >= 18))
+console.log(ages.reduce((prev, val) => prev + val, 0))
