@@ -45,7 +45,9 @@
 
 
 
-const ages = [10, 12, 18, 9, 23]
+// const ages = [10, 12, 18, 9, 23]
 // const ages = [10, 2, 1, 9, 3]
 // console.log(ages.some(age => age >= 18))
-console.log(ages.reduce((prev, val) => prev + val, 0))
+// console.log(ages.reduce((prev, val) => prev + val, 0))
+// ages.splice(2, 0, 96)
+// console.log(ages)
