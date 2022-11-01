@@ -51,3 +51,16 @@
 // console.log(ages.reduce((prev, val) => prev + val, 0))
 // ages.splice(2, 0, 96)
 // console.log(ages)
+
+
+// const arr = [1, 2, 3, 4, 5]
+
+// // arr.reduce((prev, val) => {
+// //     console.log(prev, val)
+// //     return prev + val
+// // })
+
+// arr.splice(2, 0, 96) // insert at any index
+// console.log(arr)
+
+// arr.splice(2, 1) // delete at any index
