@@ -14,9 +14,13 @@ function matrixMaxRowColumn(matrix: number[][]): number[] {
         maxRowCombined.push(Math.max(...matrix[i]))
         maxColumnCombined.push(Math.max(...matrix.map((row) => row[i])))
     }
+    console.log(maxRowCombined);
+    console.log(maxColumnCombined);
+    
     return maxRowCombined.filter((value) => maxColumnCombined.includes(value))
 }
 
 console.time('matrixMaxRowColumn')
-console.log(matrixMaxRowColumn([[1, 2, 9], [4, 5, 6], [7, 8, 3]]))
+// console.log(matrixMaxRowColumn([[1, 2, 9], [4, 5, 6], [7, 8, 3]]))
+console.log(matrixMaxRowColumn([[1, 2, 9, 10], [4, 5, 6, 11], [7, 8, 3, 2]]))
 console.timeEnd('matrixMaxRowColumn')
