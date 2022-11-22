@@ -30,4 +30,9 @@ function merge(left: number[], right: number[]): number[] {
         .concat(right.slice(rightIndex))
 }
 
+for (var i = 0; i < 10000000; i++) {
+    var arr = Array.from({length: 100}, () => Math.floor(Math.random() * 100))
+    console.log(mergeSort(arr))
+}
+
 console.log(mergeSort([89, 45, 68, 90, 29, 34, 17]))

@@ -5,7 +5,7 @@ function counting(arr: number[]): number[] {
     for (let i = 0; i < arr.length; i++) {
         counts[arr[i] - min]++
     }
-    let sortedIndex = 0;
+    let sortedIndex = 0
     for (let i = min; i <= max; i++) {
         while (counts[i - min] > 0) {
         arr[sortedIndex++] = i

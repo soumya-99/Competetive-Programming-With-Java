@@ -11,4 +11,4 @@ const insertion = (arr: number[]): number[] => {
     return arr
 }
 
-console.log(insertion([89, 45, 68, 90, 29, 34, 17]))
+console.log(insertion([8, 2, 4, 1, 3]))
